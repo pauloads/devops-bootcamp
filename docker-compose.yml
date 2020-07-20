@@ -1,0 +1,14 @@
+version: '3'
+services:
+    scm:
+        image: "paulocorreadev/backend-scm:alpha"
+        ports: 
+            - "3030:3030"
+    user:
+        image: "paulocorreadev/backend-user:alpha"
+        ports:
+            - "3020:3020"
+    frontend:
+        image: "paulocorreadev/questcode-frontend:alpha"
+        ports:
+            - "80:80"
